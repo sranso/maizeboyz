@@ -2,15 +2,38 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: url('../public/kernel.png') 15 15, auto;
+  background: url('../public/space.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: DeepPink;
+}
+
+body:active {
+  animation: pop-the-corn 1s;
+}
+
+@keyframes pop-the-corn {
+  0% {
+    cursor: url('../public/popped-small.png') 15 15, auto;
+  }
+  50% {
+    cursor: url('../public/popped-large.png') 15 15, auto;
+  }
+  75% {
+    cursor: url('../public/popped-med.png') 15 15, auto;
+  }
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  cursor: url('../public/kernel.png') 15 15, auto;
 }
 
 * {
   box-sizing: border-box;
 }
+
