@@ -13,19 +13,7 @@ body {
 }
 
 body:active {
-  animation: pop-the-corn 1s;
-}
-
-@keyframes pop-the-corn {
-  0% {
-    cursor: url('../public/popped-small.png') 15 15, auto;
-  }
-  50% {
-    cursor: url('../public/popped-large.png') 15 15, auto;
-  }
-  75% {
-    cursor: url('../public/popped-med.png') 15 15, auto;
-  }
+  animation: pop-the-corn 400ms;
 }
 
 a {
@@ -33,7 +21,26 @@ a {
   cursor: url('../public/kernel.png') 15 15, auto;
 }
 
+a:hover {
+  color: darkorange;
+}
+
+a:active {
+  animation: pop-the-corn 400ms;
+}
+
 * {
   box-sizing: border-box;
 }
 
+@keyframes pop-the-corn {
+  0% {
+    cursor: url('../public/popped-small.png') 15 15, auto;
+  }
+  50% {
+    cursor: url('../public/popped-med.png') 15 15, auto;
+  }
+  100% {
+    cursor: url('../public/popped-large.png') 15 15, auto;
+  }
+}

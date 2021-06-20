@@ -17,8 +17,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the Maize
+          Maize Boyz
         </h1>
+        <p className={styles.description}><i>Welcome to the Maize</i></p>
 
         <div className={styles.sidebar}>
           <a
