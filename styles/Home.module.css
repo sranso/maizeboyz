@@ -19,37 +19,28 @@
 
   animation-duration: 40s;
   animation-name: slidein;
-  animation-delay: 10s;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
   transition-property: margin;
   transition-timing-function: linear;
-  transition-duration: 8s;
+  transition-duration: 10s;
 }
 
 @keyframes slidein {
   0% {
-    margin-left: -65rem;
-    margin-top: -63rem;
+    transform: translate(-5vw, -5vh);
   }
 
-  25% {
-    margin-left: -20rem;
-    margin-top: -39rem;
+  33% {
+    transform: translate(33vw, 33vh) rotate(-7deg);
   }
 
-  50% {
-    margin-left: 10;
-    margin-top: 2;
-  }
-
-  75% {
-    margin-left: 20rem;
-    margin-top: 25rem;
+  66% {
+    transform: translate(70vw, 78vh) rotate(18deg);
   }
 
   100% {
-    margin-right: -20rem;
-    margin-bottom: -25rem;
+    transform: translate(105vw, 105vh) rotate(2deg);
   }
 }
 
@@ -97,5 +88,4 @@
 }
 
 @media (max-width: 600px) {
-
 }
